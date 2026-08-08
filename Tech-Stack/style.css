@@ -1,19 +1,37 @@
+@font-face {
+    font-family: "Buenard";
+    src: url("/fonts/Buenard-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("/fonts/Inter-VariableFont_opsz\,wght.ttf");
+}
+
 .navbar {
     color: #000000;
 }
 
 .navbar-name {
     color: #000000;
+        font-family: "Buenard"
     font-size: 20px;
-    font-weight: bold;
+    font-weight: Regular;
 }
 
 .navbar-link {
     color: #000000;
+    font-family: "Inter";
+    font-size: 15px;
+    font-weight: Regular;
 }
 
 #h1 {
     color: #000000;
+    font-family: "Inter";
+    font-size: 100px;
+    font-weight: Regular;
+    letter-spacing: 0.15em;
 }
 
 #About-me-bar {
