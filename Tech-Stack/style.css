@@ -8,6 +8,16 @@
     src: url("/fonts/Inter-VariableFont_opsz\,wght.ttf");
 }
 
+@font-face {
+    font-family: "Digital-numbers";
+    src: url("/fonts/SFDigitalReadout-Medium.ttf")
+}
+
+@font-face {
+    font-family: "Combo";
+    src: url("/fonts/Combo-Regular.ttf");
+}
+
 main {
     background-color: white;
 }
@@ -16,18 +26,6 @@ main {
 header { 
     text-align: center;
     margin-top: 55px;
-    /* box-sizing: border-box;
-    top: 50;
-    left: center;
-    right: center;
-    width: 100%;
-    min-height: 20vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-    text-decoration: none;
-    gap: 20px; */
 }
 
 .navbar {
@@ -38,10 +36,6 @@ header {
     color: #000000;
     position: relative;
     padding: 10px 0px;
-    /* margin-left: center;
-    margin-right: center;
-    margin-top: 0;
-    margin-bottom: 0; */
 }
 
 .navbar-name {
@@ -78,8 +72,8 @@ li {
     font-size: 100px;
     font-weight: normal;
     letter-spacing: 0.15em;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 70px;
+    margin-bottom: 20px;
     text-align: center;
     white-space: nowrap;
 }
@@ -87,37 +81,268 @@ li {
 #Profile-picture {
     width: 80%;
     display: block;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .box {
+    width: 1290px;
+    height: 900px;
     background-color: #D7EBF9;
-    width: 80%;
-    /* display: block; */
+    padding: 60px;
+    border-radius: 50px;
     margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    box-sizing: border-box;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-columns: auto, auto;
+    column-gap: 60px;
+    row-gap: 70px;
+    position: relative;
+    overflow: hidden;
+}
+
+.About-me-section {
+    Position: absolute;
+    left: 20%;
+    top: 8%;
+    width: 235px;
+}
+
+.About-me-outside {
+    margin-left: 58px;
+    display: grid;
+    place-items: center;
+    border-radius: 20px;
+    height: 60px;
+    width: 160px;
+    background-color: #202020;
+}
+
+
+#About-me-inside {
+    display: grid;
+    place-items: center;
+    border-radius: 15px;
+    height: 50px;
+    width: 150px;
+    background-color: #AF836A;
 }
 
 #About-me-bar {
-    color: #000000;
+    font-family: "Digital-numbers";
+    margin-top: 12px;
+    font-size: 30px;
+    color: #fefefe;
+    letter-spacing: 3px;
 }
 
-#Projects-bar {
-    color: #000000;
+.About-me-list li {
+    height: 60px;
+    width:  270px;
+    display: flex;
+    justify-content: center;
+    font-family: "Inter";
+    align-items: center;
+    font-size: 21px;
+    border: 2px solid white;
 }
 
-#Art-bar {
-    color: #000000;
+.Origin {
+    background: #83b8da;
 }
 
-#Contact-me-bar {
-    color: #000000;
+.Biography {
+    background: #e2d1dc;
 }
 
-.list-bar {
-    color: #000000;
+.Vision {
+    background: #e2d1dc;
 }
 
+.Communities {
+    background: #fafafa;
+}
+
+.Projects-section {
+    position: absolute;
+    top: 5%;
+    right: 20%;
+    width: 240px;
+    text-align: center;
+}
+
+.Globe {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 5px;
+}
+
+.Projects-list {
+    padding: 0;
+    margin: 0;
+}
+
+.Projects-list li {
+    font-family: "Inter";
+    height: 51px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 21px;
+    border: 2px solid white;
+}
+
+
+.Projects-collaborative {
+    background: #efdfe1;
+}
+
+.Projects-personal {
+    background: #deb298;
+}
+
+.Art-section {
+    position: absolute;
+    left: 24%;
+    bottom: 18%;
+    width: 300px;
+    text-align: center;
+}
+
+.Plant {
+    width: 170px;
+    height: 130px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto -5px;
+}
+
+.Art-list {
+    padding: 0;
+    margin: 0;
+}
+
+.Art-list li {
+    font-family: "Inter";
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    border: 2px solid white;
+}
+
+.Art-collaborative {
+    background: #b8ce8f;
+}
+
+.Art-personal {
+    background: #fff8f8;
+}
+
+
+.Contact-me-section {
+    position: absolute;
+    right: 18%;
+    bottom: 21%;
+    width: 215px;
+    height: 250px;
+    background: #cda78d;
+    border: 10px solid #e7d1bd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Contact-me {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: white;
+    font-family: "Combo";
+    font-size: 31px;
+    letter-spacing: 1px;
+
+}
+
+.Instagram,
+.Gmail {
+    width: 55px;
+    height: 55px;
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.Instagram {
+    background: white;
+    margin-top: 5px;
+   margin-bottom: 15px;
+}
+
+.Gmail {
+    background: #222;
+    color: white;
+}
+
+.Rectangle {
+    height: 854px;
+    width: 1254px;
+    background-color: #255578;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.Antigua-Guatemala {
+    width: 657px;
+    height: 856px;
+}
+
+.Rectangle, .Antigua-Guatemala {
+    object-fit: cover;
+    display: block;
+}
+
+.Origin-info {
+    width: 48%;
+    height: 100%;
+    position: relative;
+    color: white;
+    padding: 45px 32px;
+}
+
+.Origin-info, .Origin-title {
+    position: absolute;
+    left: 32px;
+    right: 45px;
+    bottom: 20px;
+    margin: 0;
+    font-size: 48px;
+    letter-spacing: 5px;
+    font-weight: normal;
+}
+
+.Origin-info p {
+    position: absolute;
+    left: 32px;
+    right: 45px;
+    bottom: 20px;
+    margin: 0;
+    color: white;
+    font-size: 16px;
+    line-height: 1.6;
+}
