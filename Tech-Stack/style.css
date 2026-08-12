@@ -18,6 +18,11 @@
     src: url("/fonts/Combo-Regular.ttf");
 }
 
+@font-face {
+    font-family: "RubikMaze";
+    src: url("/fonts/RubikMaze-Regular\ \(1\).ttf");
+}
+
 main {
     background-color: white;
 }
@@ -312,37 +317,65 @@ li {
     height: 856px;
 }
 
-.Rectangle, .Antigua-Guatemala {
-    object-fit: cover;
-    display: block;
-}
-
 .Origin-info {
-    width: 48%;
-    height: 100%;
     position: relative;
     color: white;
-    padding: 45px 32px;
+    right: 3%;
+    height: 200px;
 }
 
-.Origin-info, .Origin-title {
-    position: absolute;
-    left: 32px;
-    right: 45px;
-    bottom: 20px;
-    margin: 0;
-    font-size: 48px;
-    letter-spacing: 5px;
-    font-weight: normal;
+.Origin-title {
+    position: relative;
+    color: #F0D4AC;
+    font-family: "RubikMaze";
+    font-size: 90px;
+    letter-spacing: 20%;
+    left: 20%;
+    top: 5%;
 }
 
-.Origin-info p {
-    position: absolute;
-    left: 32px;
-    right: 45px;
-    bottom: 20px;
-    margin: 0;
-    color: white;
-    font-size: 16px;
-    line-height: 1.6;
+.Origin-p {
+    height: 300px;
+    width: 450px;
+    position: relative;
+    font-size: 20px;
+    font-family: "Inter";
+    top: 230px;
+    margin-left: 85px;
+    text-align: right;
+    line-height: 30px;
+}
+
+.full-screen-box {
+    width: 100vw;
+    height: 100vw;
+    background-color: lightblue;
+    display: flex;
+}
+
+.box2 {
+    width: 1290px;
+    height: 900px;
+    background-color: white;
+    padding: 60px;
+    border-radius: 50px;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px; 
+    box-sizing: border-box;
+    grid-template-columns: 2fr 2fr;
+    display: flex;
+    grid-template-columns: auto, auto;
+    column-gap: 60px;
+    row-gap: 70px;
+    position: relative;
+    overflow: hidden;
+}
+
+.Rectangle2 {
+    background-color: lightblue;
+    height: 467px;
+    width: 1180px;
+    display: block;
 }
