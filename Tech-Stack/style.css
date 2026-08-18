@@ -33,14 +33,24 @@
     src: url("/fonts/Hind-Kochi-400.ttf");
 }
 
+
 main {
     background-color: white;
 }
 
 
 header { 
+    background-color: white;
     text-align: center;
     margin-top: 55px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+}
+
+a{
+    text-decoration: none;
 }
 
 .navbar {
@@ -100,16 +110,22 @@ li {
     margin-left: auto;
     margin-right: auto;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 .box {
-    width: 1290px;
+    width: 80%;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
     height: 900px;
     background-color: #D7EBF9;
     padding: 60px;
     border-radius: 50px;
     margin-top: 100px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 100px;
     box-sizing: border-box;
     grid-template-columns: 1fr 1fr;
@@ -125,7 +141,7 @@ li {
     Position: absolute;
     left: 20%;
     top: 8%;
-    width: 235px;
+    width: 80%;
 }
 
 .About-me-outside {
@@ -168,19 +184,23 @@ li {
 }
 
 .Origin {
+    color: black;
     background: #83b8da;
 }
 
 .Biography {
+    color: black;
     background: #e2d1dc;
 }
 
 .Vision {
+    color: black;
     background: #e2d1dc;
 }
 
-.Communities {
-    background: #fafafa;
+.Communities-list {
+    color: white;
+    background: #255578;
 }
 
 .Projects-section {
@@ -216,10 +236,12 @@ li {
 
 
 .Projects-collaborative {
+    color: black;
     background: #efdfe1;
 }
 
 .Projects-personal {
+    color: black;
     background: #deb298;
 }
 
@@ -310,12 +332,12 @@ li {
 }
 
 .Rectangle {
-    height: 854px;
-    width: 1254px;
+    height: auto;
+    width: 78%;
     background-color: #255578;
     margin-top: 100px;
-    margin-left: 120px;
-    margin-right: 100px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 100px;
     display: flex;
     box-sizing: border-box;
@@ -326,6 +348,8 @@ li {
     width: 657px;
     height: 856px;
 }
+
+/* LOOK */
 
 .Origin-info {
     position: relative;
@@ -338,63 +362,69 @@ li {
     position: relative;
     color: #F0D4AC;
     font-family: "RubikMaze";
-    font-size: 90px;
+    font-size: 110px;
+    margin-left: 250px;
     letter-spacing: 20%;
-    left: 20%;
     top: 5%;
 }
 
 .Origin-p {
     height: 300px;
-    width: 450px;
+    width: 520px;
     position: relative;
-    font-size: 20px;
+    font-size: 22px;
     font-family: "Inter";
-    top: 230px;
-    margin-left: 85px;
+    top: 160px;
+    margin-left: 250px;
     text-align: right;
     line-height: 30px;
 }
 
 .full-screen-box {
     margin-top: 100px;
-    margin-left: 120px;
-    margin-right: 100px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 100px;
-    height: 854px;
-    width: 1254px;
+    height: 954px;
+    width: 80%;
     color: #828282;
     background-color: #D8EBFA;
     display: flex;
 }
 
 .box2 {
-    height: 550px;
+    height: 650px;
     width: 1254px;
     background-color: white;
     padding: 60px;
     border-radius: 50px;
     margin-top: 90px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 100px; 
 }
+
+/* LOOK 
+.NCGT-picture {
+    display: flex;
+    justify-content: flex-end;
+} */
 
 .Rectangle2 {
     background-color: #D8EBFA;
     display: flex;
     padding-left: 10px;
     padding-right: 10px;
-    height: 367px;
-    width: 900px;
+    height: 430px;
+    width: auto;
 }
 
 .Autobiography-info {
-    text-align: center;
+    text-align: right;
     font-family: "Lato";
     color: black;
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 16px;
+    line-height: 23px;
     color: #828282;
     display: flex;
     padding-top: 25px;
@@ -403,11 +433,11 @@ li {
 
 .Vision-box {
     margin-top: 100px;
-    margin-left: 120px;
-    margin-right: 100px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 100px;
-    height: 854px;
-    width: 1254px;
+    height: 940px;
+    width: 80%;
     position: relative;
     box-sizing: border-box;
 }
@@ -421,21 +451,21 @@ li {
     position: absolute;
     top: 0;
 
-    left: 500px;
-    width: 300px;
-    height: 800px;
+    left: 600px;
+    width: 340px;
+    height: 900px;
     overflow: visible;
 }
 
 .Curved-line path {
     fill: none;
     stroke: #cce5fa;
-    stroke-width: 2;
+    stroke-width: 3;
 }
 
 .Left-side-vision {
     position: absolute;
-    top: 100px;
+    top: 30px;
     left: 55px;
     width: 220px;
     text-align: center;
@@ -443,8 +473,8 @@ li {
 
 .Left-side-vision p {
     margin: 0;
-    font-size: 17px;
-    line-height: 25px;
+    font-size: 19px;
+    line-height: 30px;
     color: #828282;
 }
 
@@ -455,16 +485,16 @@ li {
 
 .Right-side-vision {
     position: absolute;
-    top: 100px;
+    top: 50px;
     right: 55px;
     width: 220px;
     text-align: center;
 }
 
 .Right-side-vision p {
-    margin-top: 45px;
-    font-size: 17px;
-    line-height: 25px;
+    margin-top: 50px;
+    font-size: 19px;
+    line-height: 30px;
     color: #828282;
 
 }
@@ -477,7 +507,7 @@ li {
 .arrow {
     position: absolute;
     color: #cce5fa;
-    font-size: 35px;
+    font-size: 36px;
 }
 
 .arrow-left {
@@ -486,7 +516,7 @@ li {
 }
 
 .arrow-right {
-    top: 420px;
+    top: 320px;
     right: 290px;
 }
 
@@ -503,25 +533,27 @@ li {
 }
 
 .box3 {
-    height: 650px;
-    width: 1150px;
+    height: 950px;
+    width: 80%;
     background-color: #255578;
     padding: 30px;
     border-radius: 50px;
     margin-top: 100px;
-    margin-left: 120px;
-    margin-right: 100px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 100px;
+    padding: 50px;
 }
 
 .Communities {
     color: white;
     height: 600px;
-    width: 1150px;
+    width: auto;
     background-color: #255578;
     box-sizing: border-box;
     margin: 0;
-    padding: 40px;
+    padding-top: 100px;
+    padding-bottom: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;
@@ -536,7 +568,7 @@ li {
     grid-column: 1 / 3;
     grid-row: 2;
     margin: 0;
-    font-size: 72px;
+    font-size: 100px;
     font-weight: 400;
     letter-spacing: 8px;
     text-align: center;
@@ -547,7 +579,7 @@ li {
     display: flex;
     align-items: center;
     gap: 20px;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.6;
 }
 
@@ -561,8 +593,8 @@ li {
 }
 
 .Community img {
-    width: 220px;
-    height: 175px;
+    width: 320px;
+    height: 275px;
     object-fit: cover;
 }
 
@@ -589,17 +621,17 @@ li {
 }
 
 .community-bottom img {
-    width: 280px;
-    height: 151px;
+    width: 380px;
+    height: 251px;
 }
 
 .full-screen-box2 {
     margin-top: 100px;
-    margin-left: 120px;
-    margin-right: 100px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 100px;
-    height: 850px;
-    width: 1254px;
+    height: 950px;
+    width: 80%;
     color: black;
     background-color: #D8EBFA;
     box-sizing: border-box;
@@ -609,10 +641,11 @@ li {
 .Projects {
     box-sizing: border-box;
     background-color: white;
+    width: 90%;
     border-radius: 50px;
     margin-top: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 50px;
     display: grid;
     grid-template-columns: 1.2fr 0.8fr;
@@ -655,19 +688,234 @@ li {
     height: auto;
 }
 
+
+/* MAIN BLUE FRAME */
+
+.projects-section {
+    box-sizing: border-box;
+
+    color: #111;
+    width: calc(100% - 100px);
+    min-height: 850px;
+
+    margin: 50px;
+
+    padding: 70px;
+
+    background: #D8EBFA;
+
+    border-radius: 90px;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   LEFT SIDE
+========================= */
+
+.project-info {
+    width: 45%;
+
+    text-align: center;
+
+    padding: 40px;
+}
+
+.section-label {
+    position: absolute;
+
+    top: 90px;
+
+    margin-left: 40%;
+
+    color: #777;
+
+    letter-spacing: 4px;
+
+    font-size: 20px;
+}
+
+.project-info h1 {
+    font-size: 42px;
+
+    font-weight: 400;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 50px;
+}
+
+.project-info h2 {
+    font-size: 28px;
+
+    font-weight: 400;
+
+    margin-bottom: 15px;
+}
+
+.project-info p {
+    color: #555;
+
+    line-height: 1.6;
+
+    font-size: 20px;
+}
+
+#project-description {
+    max-width: 450px;
+
+    margin: 0 auto;
+
+    transition:
+        opacity 0.25s ease,
+        transform 0.25s ease;
+}
+
+#project-creators {
+    margin-top: 55px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   RIGHT SIDE
+========================= */
+
+.project-area {
+    width: 55%;
+
+    height: 700px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    perspective: 1200px;
+}
+
+
+/* STACK */
+
+.project-stack {
+    position: relative;
+
+    width: 500px;
+    height: 600px;
+
+    transform-style: preserve-3d;
+
+    transition: transform 0.15s ease-out;
+}
+
+
+/* PROJECT CARDS */
+
 .project-card {
+    position: absolute;
+
+    width: 500px;
+    height: 280px;
+
+    background: white;
+
+    border: 2px solid white;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.45s ease,
+        filter 0.45s ease,
+        opacity 0.45s ease;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+.project-card img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* STACK POSITIONS */
+
+.card-1 {
+    top: 20px;
+
+    left: 50px;
+
+    z-index: 4;
+
+    transform: translateZ(80px);
+}
+
+.card-2 {
+    top: 140px;
+
+    left: 0;
+
+    z-index: 3;
+
+    transform: translateZ(40px);
+}
+
+.card-3 {
+    top: 260px;
+
+    left: 50px;
+
+    z-index: 2;
+
+    transform: translateZ(0);
+}
+
+.card-4 {
+    top: 380px;
+
+    left: 0;
+
+    z-index: 1;
+
+    transform: translateZ(-40px);
+}
+
+
+/* HOVER EFFECT */
+
+.project-card:hover {
+    transform:
+        translateZ(150px)
+        scale(1.04);
+
+    z-index: 20;
+
+    filter: brightness(1.05);
+}
+
+/* .project-card {
     box-sizing: border-box;
     position: relative;
-    width: 92%;
-    max-width: 1254px;
-    height: 600px;
+    width: 80%;
+    height: 900px;
     margin: 30px auto;
     background-color: #d8ebfa;
     border-radius: 60px;
     overflow: hidden;
-}
-
-.projects-label {
+} */
+/* .projects-label {
     position: absolute; 
     top: 40px;
     right: 31%;
@@ -705,10 +953,10 @@ li {
     font-size: 15px;
     line-height: 1.6;
     color: #555;
-}
+} */
 
 
-.parallax-card {
+/* .parallax-card {
     position: absolute;
 
     right: 8%;
@@ -720,12 +968,12 @@ li {
     height: 460px;
 
     transform: translateY(-50%);
-}
+} */
 
 
 /* =========================
    ALL RECTANGLE LAYERS
-   ========================= */
+   =========================
 
 .layer {
     position: absolute;
@@ -739,9 +987,9 @@ li {
 }
 
 
-/* =========================
+=========================
    BACK WHITE RECTANGLE
-   ========================= */
+   =========================
 
 .back {
     width: 260px;
@@ -756,9 +1004,9 @@ li {
 }
 
 
-/* =========================
+=========================
    MIDDLE GRAY RECTANGLE
-   ========================= */
+   =========================
 
 .middle {
     width: 320px;
@@ -775,9 +1023,9 @@ li {
 }
 
 
-/* =========================
+=========================
    FRONT GRAY RECTANGLE
-   ========================= */
+   =========================
 
 .front {
     width: 360px;
@@ -794,9 +1042,9 @@ li {
 }
 
 
-/* =========================
+=========================
    IMAGE
-   ========================= */
+   =========================
 
 .image-layer {
     width: 135px;
@@ -816,4 +1064,4 @@ li {
     object-fit: cover;
 
     display: block;
-}
+} */

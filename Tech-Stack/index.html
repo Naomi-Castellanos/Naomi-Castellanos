@@ -13,11 +13,11 @@
        <div class="navbar-name">Naomi Castellanos</div>
 
         <nav class="navbar">
-            <li><a class = "navbar-link" href="#">Home</a></li>
-            <li><a class = "navbar-link" href="#">About me</a></li>
-            <li><a class = "navbar-link" href="#">Projects</a></li>
+            <li><a class = "navbar-link" href="#h1">Home</a></li>
+            <li><a class = "navbar-link" href="#About-me-navbar">About me</a></li>
+            <li><a class = "navbar-link" href="#Projects-navbar">Projects</a></li>
             <li><a class = "navbar-link" href="#">Art</a></li>
-            <li><a class = "navbar-link" href="#">Contact me</a></li>
+            <li><a class = "navbar-link" href="#Contact-me">Contact me</a></li>
         </nav>
     </header>
 
@@ -38,18 +38,18 @@
             </div>
 
                <lu class="About-me-list">    
-                    <li class="Origin">Origin</li>
-                    <li class="Biography">Biography</li>
-                    <li class="Vision">Vision</li>
-                    <li class="Communities">Communities</li>
+                    <a href="#Origin"><li class="Origin">Origin</li></a>
+                    <a href="#Biography"><li class="Biography">Biography</li></a>
+                    <a href="#Vision"><li class="Vision">Vision</li></a>
+                    <a href="#Communities"><li class="Communities-list">Communities</li></a>
                </lu>
         </sector>
 
         <sector class="Projects-section">
-            <img class="Globe" src="./images/Globe.png" alt="Globe picture">
+            <a href="#Projects-navbar"><img class="Globe" src="./images/Globe.png" alt="Globe picture"></a>
             <lu class="Projects-list">
-                <li class="Projects-collaborative">Collaborative</li>
-                <li class="Projects-personal">Personal</li>
+                <a href="#Projects-collaborative"><li class="Projects-collaborative">Collaborative</li></a>
+                <a href="#Projects-personal"><li class="Projects-personal">Personal</li></a>
             </lu>
         </sector>
 
@@ -62,24 +62,24 @@
         </sector>
 
         <sector class="Contact-me-section">
-            <h6 class="Contact-me">Contact me</h6>
+            <a href="#Contact-me"><h6 class="Contact-me">Contact me</h6></a>
             <lu class="Contact-me-list">
-                <img class="Instagram" src="./images/Instagram.png" alt="Instagram logo">
+                <a href="https://www.instagram.com/naocandid?igsh=MXU3MjFvbmllYmY4cw%3D%3D&igsi=MXU3MjFvbmllYmY4cw%3D%3D&utm_source=qr"><img class="Instagram" src="./images/Instagram.png" alt="Instagram logo"></a>
                 <img class="Gmail" src="./images/Gmail.png" alt="Instagram logo">
             </lu>
         </sector>
     </div>
 
 
-    <div class="Rectangle">
+    <div class="Rectangle" id="About-me-navbar">
         <img class="Antigua-Guatemala" src="./images/Antigua_Guatemala.png" alt="Antigua Guatemala picture">
-        <div class="Origin-info">
+        <div id=Origin class="Origin-info">
             <h2 class="Origin-title">ORIGIN</h2>
             <p class="Origin-p">Naomi Castellanos is from the Land of the eternal spring. Nestled in the heart of Central America, it is a country where a vibrant culture, giant active volcanoes, and breathtaking lakes coexist. Guatemala is not just another country in the map. For Naomi, it is the place where her roots began, shaping her values, strengthening her sense of identity, and reminding her to carry the beauty and resilience of her heritage wherever life takes her.</p>
         </div>
     </div>
 
-    <div class="full-screen-box">
+    <div id=Biography class="full-screen-box">
         <div class="box2">
             <div class="Rectangle2">
                 <img class="Autonbiography-title" src="images/Autobiogrpahy 1.png" alt = "Autobiography">
@@ -93,7 +93,7 @@
     </div>      
 
 
-    <div class="Vision-box">
+    <div id=Vision class="Vision-box">
         <div class="Vision">
             <svg class="Curved-line" viewBox="0 0 300 700">
                 <path d="
@@ -112,14 +112,14 @@
                 <img class="Leaf-footprint" src="Images/Leaf-footprint-picture.png" alt="Green leaf footprint picture">
                 <p>Naomi’s vision is to raise awareness to the community around her of damage humans had made to the Earth, where living things live harmoniously. For Naomi it is important to take either big or little actions to prevent further damage and contribute to a healthier planet for future generations.</p>
             </div>
-            <div class="arrow arrow-left">←------------------</div>
-            <div class="arrow arrow-right">---------------------→</div>
+            <div class="arrow arrow-left">←-------------------------</div>
+            <div class="arrow arrow-right">-----------------------------→</div>
             <h2 class="Vision-title">VISION</h2>
         </div>
     </div>
 
 
-    <div class="box3">
+    <div id=Communities class="box3">
         <div class="Communities">
             <h2 class="Communities-title">COMMUNITIES</h2>
             <div class="Community community-left">
@@ -157,7 +157,7 @@
 
 
     <div class="full-screen-box2">
-        <div class="Projects">
+        <div class="Projects" id="Projects-navbar">
             <div clas="Projectsbox">
                 <h2 class="Projects-title">PROJECTS</h2>
                 <div class="Projects-links">
@@ -170,38 +170,63 @@
     </div>
     
 
-    <div class="project-card">
-        <p class="projects-label">PROJECTS</p>
+    <section class="projects-section">
         <div class="project-info">
-            <h3 class="project-title">COLLABORATIVE</h3>
-            <h4 class="project-name">MYTASK</h4>
-            <p class="project-description">Mytask is a safety digital space for everybody, including users whom may have ADHD and depression, to support their mental health while facilitating a deeper concentration for those who daily procrastinate on their daily tasks.</p>
-            <h5 class="project-members">Naomi and London - AFH</h5>
+            <p id="Projects-collaborative" class="project-label">PROJECTS</p>
+            <h3 id="project-category">COLLABORATIVE</h3>
+            <h4 id="project-title">MYTASK</h4>
+            <p id="project-description">Mytask is a safety digital space for everybody, including users whom may have ADHD and depression, to support their mental health while facilitating a deeper concentration for those who daily procrastinate on their daily tasks.</p>
+            <p id="project-creators">London James and<br>Naomi Castellanos - AFH</p>
         </div>
 
-        <div class="parallax-card">
-            <div class="layer layer-back" data-project="0"></div>
-            <div class="layer layer-middle" data-project="1"></div>
-            <div class="later layer-front" data-project="2"></div>
-            <div class="layer layer-image" data-project="3">
-                <img src="images/MYTASK-icon-page.png" alt="MyTask project">
+        <div class="project-area">
+            <div class="project-stack">
+                <div class="project-card card-1"
+                    data-category="COLLABORATIVE"
+                    data-title="MYTASK"
+                    data-description="Mytask is a safety digital space for everybody, including users whom may have ADHD and depression, to support their mental health while facilitating a deeper concentration for those who daily procrastinate on their daily tasks."
+                    data-creators="London James and Naomi Castellanos - AFH">
+
+                    <img src="images/MYTASK-icon-page.png" alt="MyTask project">
+                </div>
+
+                <div class="project-card card-2"
+                    data-category="COLLABORATIVE"
+                    data-title="GAIA"
+                    data-description="A Manta ray-robot, named Gaia, which purpose is to save and prevent ocean pollution by automaticly collecting trash in the water. So then the trash is converted into a eco-brick to build houses for low-income families."
+                    data-creators="BioBots - Colegio Bilingüe El Castaño Robotic team">
+
+                    <img src="images/gaia.png" alt="Gaia project">
+                </div>
+
+                <div class="project-card card-3"
+                    data-category="COLLABORATIVE"
+                    data-title="Coming soon"
+                    data-description="------"
+                    data-creators="------">
+
+                    <img src="#" alt="N/A">
+                </div>
+
+                <div class="project-card card-4"
+                    data-category="COLLABORATIVE"
+                    data-title="Coming soon"
+                    data-description="------"
+                    data-creators="------">
+
+                    <img src="#" alt="N/A">
+                </div>
+
             </div>
         </div>
-
-        <!-- <h4 id="">GAIA</h4>
-        <h5>Colegio Bilingüe El Castaño Robotic team - Biobots</h5>
-        <p>----</p> -->
-    </div>
+    </section>
 
 
-    <div>
+    <div id="Projects-personal">
         <h3>PERSONAL</h3>
         <h4>SaveTime</h4>
         <p>SaveTime is an intelligent laundry-folding robot designed for people who often leave folding clothes until the end. It automatically folds clean laundry quickly and neatly. Whether you're busy, tired, or simply dislike folding clothes, SaveTime makes finishing laundry easier and more convenient.</p>
     </div>
-<!-- 
-    <script src="script.js"></script> -->
-
 
     <!-- <h2>ART</h2>
     <h3>COLLABORATIVE</h3>
@@ -231,7 +256,7 @@
     <img src="" alt="Painting tools picture">
     </main> -->
 
-    <Footer>
+    <Footer id="Contact-me">
         <p>N</p>
         <p>C</p>
         <img src="" alt="Instagram icon">
