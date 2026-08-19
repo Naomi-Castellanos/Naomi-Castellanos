@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naomi Castellanos</title>
     <link rel="stylesheet" href="style.css">
-    <script src="Interactive.js"></script>
+    <script src="Interactive.js" defer></script>
 </head>
 <body>
     <header>
@@ -46,7 +46,7 @@
         </sector>
 
         <sector class="Projects-section">
-            <a href="#Projects-navbar"><img class="Globe" src="./Images/" alt="Globe picture"></a>
+            <a href="#Projects-navbar"><img class="Globe" src="./Images/Globe.png" alt="Globe picture"></a>
             <lu class="Projects-list">
                 <a href="#Projects-collaborative"><li class="Projects-collaborative">Collaborative</li></a>
                 <a href="#Projects-personal"><li class="Projects-personal">Personal</li></a>
@@ -54,7 +54,7 @@
         </sector>
 
         <sector class="Art-section">
-            <img class="Plant" src="./Images/" alt="Plant picture">
+            <img class="Plant" src="./Images/Plant.png" alt="Plant picture">
             <lu  class="Art-list">
                 <li class="Art-collaborative">Collaborative</li>
                 <li class="Art-personal">Personal</li>
@@ -170,57 +170,272 @@
     </div>
     
 
+
     <section class="projects-section">
+
+        <!-- LEFT SIDE: PROJECT INFORMATION -->
         <div class="project-info">
-            <p id="Projects-collaborative" class="project-label">PROJECTS</p>
-            <h3 id="project-category">COLLABORATIVE</h3>
-            <h4 id="project-title">MYTASK</h4>
-            <p id="project-description">Mytask is a safety digital space for everybody, including users whom may have ADHD and depression, to support their mental health while facilitating a deeper concentration for those who daily procrastinate on their daily tasks.</p>
-            <p id="project-creators">London James and<br>Naomi Castellanos - AFH</p>
+
+            <p id="Projects-collaborative" class="project-label">
+                PROJECTS<br><br>scroll
+            </p>
+
+            <h3 id="project-category">
+                COLLABORATIVE
+            </h3>
+
+            <h4 id="project-title">
+                MYTASK
+            </h4>
+
+            <p id="project-description">
+                Mytask is a safety digital space for everybody,
+                including users whom may have ADHD and depression,
+                to support their mental health while facilitating
+                a deeper concentration for those who daily
+                procrastinate on their daily tasks.
+            </p>
+
+            <p id="project-creators">
+                London James and<br>
+                Naomi Castellanos - AFH
+            </p>
+
         </div>
 
-        <div class="project-area">
-            <div class="project-stack">
-                <div class="project-card card-1"
-                    data-category="COLLABORATIVE"
-                    data-title="MYTASK"
-                    data-description="Mytask is a safety digital space for everybody, including users whom may have ADHD and depression, to support their mental health while facilitating a deeper concentration for those who daily procrastinate on their daily tasks."
-                    data-creators="London James and Naomi Castellanos - AFH">
 
-                    <img src="Images/MYTASK-icon-page.png" alt="MyTask project">
+        <!-- RIGHT SIDE: PROJECT CARDS -->
+        <div class="project-area">
+
+            <div class="project-stack">
+
+
+                <!-- =========================
+                    CARD 1 — MYTASK
+                ========================== -->
+
+                <div class="project-card"
+
+                    data-category="COLLABORATIVE"
+
+                    data-title="MYTASK"
+
+                    data-description="Mytask is a safety digital space for everybody, including users whom may have ADHD and depression, to support their mental health while facilitating a deeper concentration for those who daily procrastinate on their daily tasks."
+
+                    data-creators="London James and|Naomi Castellanos - AFH">
+
+                    <img
+                        src="Images/MYTASK-icon-page.png"
+                        alt="MyTask project"
+                    >
+
                 </div>
 
-                <div class="project-card card-2"
+
+                <!-- =========================
+                    CARD 2 — GAIA
+                ========================== -->
+
+                <div class="project-card"
+
                     data-category="COLLABORATIVE"
+
                     data-title="GAIA"
-                    data-description="A Manta ray-robot, named Gaia, which purpose is to save and prevent ocean pollution by automaticly collecting trash in the water. So then the trash is converted into a eco-brick to build houses for low-income families."
+
+                    data-description="A Manta ray-robot, named Gaia, which purpose is to save and prevent ocean pollution by automatically collecting trash in the water. The trash is then converted into an eco-brick to build houses for low-income families."
+
                     data-creators="BioBots - Colegio Bilingüe El Castaño Robotic team">
 
-                    <img src="Images/gaia.png" alt="Gaia project">
+                    <img
+                        src="Images/gaia.png"
+                        alt="Gaia project"
+                    >
+
                 </div>
 
-                <div class="project-card card-3"
+
+                <!-- =========================
+                    CARD 3 — COMING SOON
+                ========================== -->
+
+                <div class="project-card"
+
                     data-category="COLLABORATIVE"
-                    data-title="Coming soon"
-                    data-description="------"
-                    data-creators="------">
 
-                    <img src="#" alt="N/A">
+                    data-title="COMING SOON"
+
+                    data-description="More projects are coming soon."
+
+                    data-creators="Coming soon">
+
+                    <img
+                        src="Images/Coming_Soon.png"
+                        alt="Coming soon"
+                    >
+
                 </div>
 
-                <div class="project-card card-4"
+
+                <!-- =========================
+                    CARD 4 — COMING SOON
+                ========================== -->
+
+                <div class="project-card"
+
                     data-category="COLLABORATIVE"
-                    data-title="Coming soon"
-                    data-description="------"
-                    data-creators="------">
 
-                    <img src="#" alt="N/A">
+                    data-title="COMING SOON"
+
+                    data-description="More projects are coming soon."
+
+                    data-creators="Coming soon">
+
+                    <img
+                        src="Images/Coming_Soon.png"
+                        alt="Coming soon"
+                    >
+
                 </div>
+
 
             </div>
+
         </div>
+
     </section>
 
+    <section class="personal-projects-section">
+
+        <!-- LEFT SIDE: PROJECT INFORMATION -->
+        <div class="personal-project-info">
+
+            <p id="Projects-personal" class="personal-project-label">
+                PROJECTS<br><br>scroll
+            </p>
+
+            <h3 id="personal-project-category">
+                PERSONAL
+            </h3>
+
+            <h4 id="personal-project-title">
+                SaveTime
+            </h4>
+
+            <p id="personal-project-description">
+                SaveTime is an intelligent laundry-folding robot designed for people who often leave folding clothes until the end. It automatically folds clean laundry quickly and neatly. 
+                Whether you're busy, tired, or simply dislike folding clothes, SaveTime makes finishing laundry easier and more convenient.
+            </p>
+
+            <p id="personal-project-creators">
+                Naomi Castellanos - AFH
+            </p>
+
+        </div>
+
+
+        <!-- RIGHT SIDE: PROJECT CARDS -->
+        <div class="personal-project-area">
+
+            <div class="personal-project-stack">
+
+
+                <!-- =========================
+                    CARD 1 — SaveTime
+                ========================== -->
+
+                <div class="personal-project-card"
+
+                    data-category="PERSONAL"
+
+                    data-title="SaveTime"
+
+                    data-description="SaveTime is an intelligent laundry-folding robot designed for people who often leave folding clothes until the end. It automatically folds clean laundry quickly and neatly. Whether you're busy, tired, or simply dislike folding clothes, SaveTime makes finishing laundry easier and more convenient."
+
+                    data-creators="Naomi Castellanos - AFH">
+
+                    <video
+                        src="Images/SaveTime.mp4"
+                        autoplay
+                        muted
+                        loop
+                        playsinline
+                        alt="SaveTime project"
+                    >
+
+                </div>
+
+
+                <!-- =========================
+                    CARD 2 — COMING SOON
+                ========================== -->
+
+                <div class="personal-project-card"
+
+                    data-category="PERSONAL"
+
+                    data-title="COMING SOON"
+
+                    data-description="More projects are coming soon."
+
+                    data-creators="Coming soon">
+
+                    <img
+                        src="Images/Coming_Soon.png"
+                        alt="Coming soon"
+                    >
+
+                </div>
+
+
+                <!-- =========================
+                    CARD 3 — COMING SOON
+                ========================== -->
+
+                <div class="personal-project-card"
+
+                    data-category="PERSONAL"
+
+                    data-title="COMING SOON"
+
+                    data-description="More projects are coming soon."
+
+                    data-creators="Coming soon">
+
+                    <img
+                        src="Images/Coming_Soon.png"
+                        alt="Coming soon"
+                    >
+
+                </div>
+
+
+                <!-- =========================
+                    CARD 4 — COMING SOON
+                ========================== -->
+
+                <div class="personal-project-card"
+
+                    data-category="PERSONAL"
+
+                    data-title="COMING SOON"
+
+                    data-description="More projects are coming soon."
+
+                    data-creators="Coming soon">
+
+                    <img
+                        src="Images/Coming_Soon.png"
+                        alt="Coming soon"
+                    >
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
 
     <div id="Projects-personal">
         <h3>PERSONAL</h3>
