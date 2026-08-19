@@ -33,6 +33,16 @@
     src: url("/fonts/Hind-Kochi-400.ttf");
 }
 
+@font-face {
+    font-family: "Italiano";
+    src: url("/fonts/Italianno-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Pica";
+    src: url("/fonts/IMFellDWPica-Regular.ttf");
+}
+
 
 main {
     background-color: white;
@@ -91,16 +101,23 @@ li {
 }
 
 #h1 {
+    font-family: "Lato";
     color: #000000;
-
-    font-family: "Inter";
-    font-size: 100px;
+    font-size: 110px;
     font-weight: normal;
     letter-spacing: 0.15em;
     margin-top: 70px;
     margin-bottom: 20px;
     text-align: center;
     white-space: nowrap;
+}
+
+.hover-text-content {
+    display: none;
+}
+
+.hover-h1 {
+    cursor: pointer;
 }
 
 #Profile-picture {
@@ -661,6 +678,7 @@ html {
 
 .Projects-title {
     font-family: "Inter";
+    color: black;
     letter-spacing: 5px;
     font-size: 70px;
     font-weight: 400;
@@ -669,6 +687,7 @@ html {
 }
 
 .Projects-links {
+    color: black;
     font-size: 25px;
     letter-spacing: 2px;
     line-height: 1;
@@ -718,6 +737,7 @@ html {
 ========================================= */
 
 .project-info {
+
     width: 50%;
     height: 100%;
 
@@ -738,6 +758,9 @@ html {
 /* PROJECT LABEL */
 
 .project-label {
+    font-family: "Inter"; 
+    color: #828282;
+
     position: absolute;
 
     top: 70px;
@@ -748,14 +771,15 @@ html {
     font-size: 18px;
 
     letter-spacing: 4px;
-
-    color: #777;
 }
 
 
 /* CATEGORY */
 
 #project-category {
+    font-family: "Inter"; 
+    color: black;
+
     margin: 0 0 35px 0;
 
     font-size: 42px;
@@ -769,6 +793,9 @@ html {
 /* PROJECT TITLE */
 
 #project-title {
+    font-family: "Lato"; 
+    color: black;
+    
     margin: 0 0 20px 0;
 
     font-size: 30px;
@@ -780,6 +807,8 @@ html {
 /* DESCRIPTION */
 
 #project-description {
+    font-family: "Lato"; 
+    color: #828282;
     width: 90%;
 
     max-width: 500px;
@@ -797,6 +826,8 @@ html {
 /* CREATORS */
 
 #project-creators {
+    font-family: "Lato"; 
+    color: #828282;
     margin-top: 45px;
 
     font-size: 18px;
@@ -1078,6 +1109,8 @@ html {
 /* PROJECT LABEL */
 
 .personal-project-label {
+    font-family: "Inter"; 
+    color: #828282;
     position: absolute;
 
     top: 70px;
@@ -1089,13 +1122,14 @@ html {
 
     letter-spacing: 4px;
 
-    color: #777;
 }
 
 
 /* CATEGORY */
 
 #personal-project-category {
+    font-family: "Inter"; 
+    color: black;
     margin: 0 0 35px 0;
 
     font-size: 42px;
@@ -1109,6 +1143,8 @@ html {
 /* PROJECT TITLE */
 
 #personal-project-title {
+    font-family: "Lato"; 
+    color: black;
     margin: 0 0 20px 0;
 
     font-size: 30px;
@@ -1120,6 +1156,9 @@ html {
 /* DESCRIPTION */
 
 #personal-project-description {
+    font-family: "Lato"; 
+    color: #828282;
+
     width: 90%;
 
     max-width: 500px;
@@ -1137,6 +1176,9 @@ html {
 /* CREATORS */
 
 #personal-project-creators {
+    font-family: "Lato"; 
+    color: #828282;
+
     margin-top: 45px;
 
     font-size: 18px;
@@ -1359,4 +1401,65 @@ html {
     transform:
         translateZ(160px)
         scale(1.04);
+}
+
+.art-box {
+    position: relative;
+    background-color: white;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    height: 940px;
+    width: 80%;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.art-title {
+    color: #A13C31;
+    font-family: "Pica";
+    font-size: 280px;
+    letter-spacing: 20px;
+}
+
+.fair-collage {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    width: 60%;
+    transform: rotate(-90deg);
+}
+
+.art-column img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.art-row {
+    font-family: "Inter";
+    color: black;
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.Contact-me-box {
+    margin-top: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.Initials {
+    font-family: "Italiano";
+    font-size: 40px;
 }

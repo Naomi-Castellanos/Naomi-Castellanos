@@ -23,7 +23,15 @@
 
     <main>
     <div>
-        <h1 id="h1">Naomi Castellanos</h1>
+        <h1 class="hover-h1"id="h1">
+            <span class="normal-title">Naomi Castellanos</span>
+            <span class="hover-text-content japanese">カステリャノス・ナオミ</span>
+            <span class="hover-text-content korean">나오미 카스테야노스</span>
+            <span class="hover-text-content italian">Noemi Castellanos</span>
+            <span class="hover-text-content hebrew">נעמי קסטיאנוס</span>
+            <span class="hover-text-content russian">Наоми Кастельянос</span>
+            <span class="hover-text-content arabic">عومي كاستيانوس</span>
+        </h1>
         <img ID="Profile-picture" src="./Images/Profile-picture.png" alt = "Profile picture of Naomi Castellanos"/>
     </div>
 
@@ -65,7 +73,7 @@
             <a href="#Contact-me"><h6 class="Contact-me">Contact me</h6></a>
             <lu class="Contact-me-list">
                 <a href="https://www.instagram.com/naocandid?igsh=MXU3MjFvbmllYmY4cw%3D%3D&igsi=MXU3MjFvbmllYmY4cw%3D%3D&utm_source=qr"><img class="Instagram" src="./images/Instagram.png" alt="Instagram logo"></a>
-                <img class="Gmail" src="./Images/Gmail.png" alt="Instagram logo">
+                <a href="mailto:ncastellanosjz@gmail.com"><img class="Gmail" src="./Images/Gmail.png" alt="Instagram logo"></a>
             </lu>
         </sector>
     </div>
@@ -161,8 +169,8 @@
             <div clas="Projectsbox">
                 <h2 class="Projects-title">PROJECTS</h2>
                 <div class="Projects-links">
-                    <p>COLLABORATIVE</p>
-                    <p>PERSONAL</p>
+                    <a href="#collaborative-projects-section"><p>COLLABORATIVE</p></a>
+                    <a href="#personal-projects-section"><p>PERSONAL</p></a>
                  </div>
             </div>
             <div class="Babyrobot"></dic><img src="Images/babyrobot 1.png" alt="Babyrobot drawing"></div>
@@ -171,7 +179,7 @@
     
 
 
-    <section class="projects-section">
+    <section id="collaborative-projects-section" class="projects-section">
 
         <!-- LEFT SIDE: PROJECT INFORMATION -->
         <div class="project-info">
@@ -304,7 +312,7 @@
 
     </section>
 
-    <section class="personal-projects-section">
+    <section id="personal-projects-section" class="personal-projects-section">
 
         <!-- LEFT SIDE: PROJECT INFORMATION -->
         <div class="personal-project-info">
@@ -437,45 +445,46 @@
 
     </section>
 
-    <div id="Projects-personal">
+    <sector class="art-box">
+        <h3 class="art-row">COLLABORATIVE</h3>
+        <h2 class="art-column art-title">ART</h2>
+        <img class="art-column fair-collage" src="Images/fair.jpg" alt="Fair-collage">
+        <h3 class="art-row">PERSONAL</h3>
+
+        <h3>COLLABATIVE</h3>
+        <img src="" alt="Hades mural in Boston Latin Academy">
+        <p>----</p>
+        <div>
+            box
+        </div>
+        <div>
+            box
+        </div>
+
         <h3>PERSONAL</h3>
-        <h4>SaveTime</h4>
-        <p>SaveTime is an intelligent laundry-folding robot designed for people who often leave folding clothes until the end. It automatically folds clean laundry quickly and neatly. Whether you're busy, tired, or simply dislike folding clothes, SaveTime makes finishing laundry easier and more convenient.</p>
-    </div>
+            <img src="" alt="Gallery BLA Track team '26">
+            <img src="" alt="AEW Dynamite 2026">
+        <h4>Gallery BLA Track team '26</h4>
+        <h4>Gallery AEW Dynamite 2026</h4>
 
-    <!-- <h2>ART</h2>
-    <h3>COLLABORATIVE</h3>
-    <h3>PERSONAL</h3>
-    <img src="" alt="Picture of Fair-collage">
-
-    <h3>COLLABATIVE</h3>
-    <img src="" alt="Hades mural in Boston Latin Academy">
-    <p>----</p>
-    <div>
-        box
-    </div>
-    <div>
-        box
-    </div>
-
-    <h3>PERSONAL</h3>
-        <img src="" alt="Gallery BLA Track team '26">
-        <img src="" alt="AEW Dynamite 2026">
-    <h4>Gallery BLA Track team '26</h4>
-    <h4>Gallery AEW Dynamite 2026</h4>
-
-    <p>“Si te caes siete veces, levántate ocho.”</p><br><p>“Fall down seven times, get up eight”</p><br><p>“七転び八起き”</p>
-    <img src="" alt="Running track picture">
-    <img src="" alt="Electric guitar picture">
-    <img src="" alt="Camera picture">
-    <img src="" alt="Painting tools picture">
-    </main> -->
+        <p>“Si te caes siete veces, levántate ocho.”</p><br><p>“Fall down seven times, get up eight”</p><br><p>“七転び八起き”</p>
+        <img src="" alt="Running track picture">
+        <img src="" alt="Electric guitar picture">
+        <img src="" alt="Camera picture">
+        <img src="" alt="Painting tools picture">
+    </sector>
+    </main>
 
     <Footer id="Contact-me">
-        <p>N</p>
-        <p>C</p>
-        <img src="" alt="Instagram icon">
-        <img src="" alt="Gmail icon">
+        <div class="Vision-box">
+            <div class="Contact-me-box">
+                <p class="Initials">N</p>
+                <a href="https://www.instagram.com/naocandid?igsh=MXU3MjFvbmllYmY4cw%3D%3D&igsi=MXU3MjFvbmllYmY4cw%3D%3D&utm_source=qr"><img src="Images/Instagram.png" alt="Instagram icon"></a>
+                <a href="mailto:ncastellanosjz@gmail.com"><img src="Images/Gmail.png" alt="Gmail icon"></a>
+                <p class="Initials">C</p>
+            </div>
+            <hr style="border: none; height: 2px; background-color: #696565; width: 80%;">
+        </div>
     </Footer>
 </body>
 </html>
